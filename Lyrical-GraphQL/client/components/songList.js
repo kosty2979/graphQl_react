@@ -7,6 +7,7 @@ class SongList extends Component {
     return this.props.data.songs.map(song => {
       return (
         <li
+          className='collection-item'
           key={song.id}
         >
           {song.title}
@@ -20,9 +21,9 @@ class SongList extends Component {
       return <div>... loading</div>
     }
     return (
-      <div>
+      <ul className='collection'>
         {this.renderSongs()}
-      </div>
+      </ul>
     )
   }
 }
