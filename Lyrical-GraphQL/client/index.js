@@ -10,7 +10,7 @@ import SongList from './components/songList';
 import SongCreate from './components/songCreate';
 
 const client = new ApolloClient({});
-
+import  './style/style.css'
 const Root = () => {
   return (
     <ApolloProvider client={client}>

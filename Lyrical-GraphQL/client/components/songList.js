@@ -22,8 +22,7 @@ class SongList extends Component {
         >
           {title}
           <i
-            style={{color: 'grey', cursor: 'pointer'}}
-            className="material-icons right"
+            className="material-icons"
             onClick={() => this.onSongDelete(id)}
           >
             delete
