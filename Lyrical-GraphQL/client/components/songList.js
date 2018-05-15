@@ -20,7 +20,7 @@ class SongList extends Component {
           className='collection-item'
           key={id}
         >
-          {title}
+          <Link to={`/songs/${id}`}>{title}</Link>
           <i
             className="material-icons"
             onClick={() => this.onSongDelete(id)}
